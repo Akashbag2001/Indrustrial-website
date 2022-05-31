@@ -14,13 +14,11 @@
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Swipper link -->
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
-
+    
+      
     <title>Smart corner | E-commerce Website</title>
+    
+    
 </head>
 
 <body>
@@ -52,31 +50,22 @@
                 </nav>
 
             </div>
-            <div class="container-slider">
-                <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="images/slider-1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="images/slider-2.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="images/slider-3.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="images/slider-4.jpg" alt=""></div>
-      
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
+            
+   
+   <div id="slider">
+    <figure>
+        <img src="/images/slider-1.jpg" >
+        <img src="/images/slider-2.jpg" >
+        <img src="/images/slider-3.jpg" >
+        <img src="/images/slider-4.jpg" >
+    </figure>
+   </div>
     
   </div>
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h1>Best Fan Here </h1>
+                    <h1>Best Fans at best Price </h1>
                     <p>
                         We sell the best fans in the market, with variety of brands to choose.  
                     </p>
@@ -155,7 +144,7 @@
             </div>
         </div>
 
-        <h2 class="title">Best Selling</h2>
+        <h2 class="title">Best Seller</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/fan-9.jpg">
@@ -256,18 +245,20 @@
         <!-- ------------Brands------------ -->
         <div class="brand">
             <div class="samll-container">
+                <h2 class="title">Brands</h2>
                 <div class="row">
+                    
                     <div class="col-4">
-                        <img class="applelogo" src="images/Apple logo.png" alt="">
+                        <img class="applelogo" src="images/crompton.png" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="realme" src="images/Realmelogo.png" alt="">
+                        <img class="realme" src="images/khaitan.png" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="oneplus" src="images/oneplus logo.png" alt="">
+                        <img class="oneplus" src="images/orient.png" alt="">
                     </div>
                     <div class="col-4">
-                        <img src="images/Paytm-Logo" alt="">
+                        <img src="images/usha.png" alt="">
                     </div>
                 </div>
             </div>
@@ -346,31 +337,7 @@
                 });
             </script>
             <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-            <script>
-const swiper = new Swiper('.swiper', {
-
-  autoplay:{
-      delay: 2000,
-      disableOnInteration: false,
-  },
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  
-});
-            </script>
+            
 
 </body>
 

@@ -169,20 +169,6 @@ p {
   max-width: 100px;
 }
 
-.swiper {
-  width: 50%;
-  height: fit-content;
-}
-.swiper-slidem img {
-  max-width: 200%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper .swiper-button-next,
-.swiper .swiper-button-prev {
-  color: #fff;
-}
 /* *************************Footer********************** */
 .site-footer {
   background-color: #26272b;
@@ -320,5 +306,50 @@ p {
     display: block;
     margin-right: 0;
     font-weight: 600;
+  }
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slider infinite;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
   }
 }
