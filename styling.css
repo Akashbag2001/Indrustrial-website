@@ -353,3 +353,13 @@ p {
     left: -400%;
   }
 }
+.text-justify {
+  color: #96a2b2;
+}
+.copyright-text {
+  color: #96a2b2;
+}
+.to-top {
+  background-color: black;
+  position: fixed;
+}
