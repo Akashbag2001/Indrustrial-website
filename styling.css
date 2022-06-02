@@ -359,7 +359,7 @@ p {
 .copyright-text {
   color: #96a2b2;
 }
-.to-top {
-  background-color: black;
-  position: fixed;
+.testimonial {
+  background-color: #293241;
+  color: white;
 }
