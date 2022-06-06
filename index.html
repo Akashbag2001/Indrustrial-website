@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- font awasome link     -->
-    
+    <script src="https://kit.fontawesome.com/6f0a8bd4fa.js" crossorigin="anonymous"></script>
     
       
     <title>Smart corner | E-commerce Website</title>
@@ -40,11 +40,21 @@
                                 <a href="index.html" class="nav-link">HOME</a>
                             </li>
                             <li class="navbar-item">
-                                <a href="About.html" class="nav-link">About</a>
+                                <a onclick="scrollWin()" class="nav-link">ABOUT</a>
                             </li>
                             <li class="navbar-item">
                                 <a href="contact.html" class="nav-link">CONTACT</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  PRODUCTS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a  onclick="scrollWin2()" class="dropdown-item" href="#">Featured Products</a>
+                                  <a onclick="scrollWin3()" class="dropdown-item" href="#">Best Seller</a>
+                                  
+                                </div>
+                              </li>
                             
                         </ul>
                     </div>
@@ -71,7 +81,7 @@
                     <p>
                         We sell the best fans in the market, with variety of brands to choose.  
                     </p>
-                    <a href="" class="btn">Explore Now &#8594</a>
+                    <a onclick="scrollWin1()" class="btn">Explore Now &#8594</a>
                 </div>
                 
             </div>
@@ -246,86 +256,31 @@
         </div>
 
         <!-- Review -->
-        <body>
-            <h2 class="title">Customer Reviews</h2>
-        </body>
-        <div class="testimonial ">
-            <div class="samll-container d-sm-inline-block">
-                <div class="row">
-                    <div class="col-3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi aut, ut ducimus iure
-                            voluptatem consequuntur quaerat delectus veritatis explicabo doloribus! Iste incidunt
-                            maiores natus dolor rerum quia vero error.
-                        </p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
         
-                        <img src="images/user-1.png" alt="">
-                        <h3>Sean Parker</h3>
-                    </div>
-                    <div class="col-3"><i class="fa fa-quote-left"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi aut, ut ducimus iure
-                            voluptatem consequuntur quaerat delectus veritatis explicabo doloribus! Iste incidunt
-                            maiores natus dolor rerum quia vero error.
-                        </p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-        
-                        <img src="images/user-2.png" alt="">
-                        <h3>David William </h3>
-                    </div>
-                    <div class="col-3"><i class="fa fa-quote-left"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi aut, ut ducimus iure
-                            voluptatem consequuntur quaerat delectus veritatis explicabo doloribus! Iste incidunt
-                            maiores natus dolor rerum quia vero error.
-                        </p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-        
-                        <img src="images/user-3.png" alt="">
-                        <h3>Lily</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- ------------Brands------------ -->
         <div class="brand">
             <div class="samll-container">
-                <h2 class="title">Brands</h2>
+               
                 <div class="row">
                     
                     <div class="col-4">
-                        <img class="applelogo" src="images/crompton.png" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="realme" src="images/khaitan.png" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="oneplus" src="images/orient.png" alt="">
-                    </div>
-                    <div class="col-4">
+                        <h2 class="title"> Our Brands</h2>
+                       
                         <img src="images/usha.png" alt="">
+                        <hr>
+                        <img  src="images/khaitan.png" alt="">
+                        <hr>
+                        <img  src="images/orient.png" alt="">
                     </div>
+                   
+                    <div class="col-4">
+                        <h2 class="title">About us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut et voluptates officiis eos, odio error dolorem atque quas, nemo asperiores molestiae impedit suscipit consequatur vero iure cumque, optio neque?
+
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus doloremque atque rerum facere rem fuga quisquam pariatur exercitationem eveniet. Nam quo ut asperiores architecto veniam praesentium consequuntur, qui odio nisi!
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -335,8 +290,11 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6">
-              <h6>About</h6>
-              <p class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi nemo odit? Iusto dolor accusantium pariatur ducimus ex cupiditate, sint nulla recusandae esse deserunt cumque commodi quisquam et earum repudiandae! </p>
+              <h6>GET IN TOUCH</h6>
+              <p class="text-justify"> <i style='font-size:24px' class='fas'>&#xf3c5;</i> C-153, Sec-5, Bawana Industrial Area, Delhi-110039. </p>
+              <p class="text-justify"> <i style='font-size:24px' class='fas'>&#xf095;</i> +91-981123XXXX <br> Mon-Fri, 10am until 7pm </p>
+              <p class="text-justify"> <i style="font-size:24px" class="fa">&#xf0e0;</i> sales@smartcorner.com <br>
+                We reply within 24 hours </p>
             </div>
   
             <div class="col-xs-6 col-md-3">
@@ -354,7 +312,7 @@
               <h6>Quick Links</h6>
               <ul class="footer-links">
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
                 <li><a href="#">Contribute</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 
@@ -382,6 +340,9 @@
           </div>
         </div>
   </footer>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
 
             <!-- js codes -->
@@ -405,6 +366,22 @@
             <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
             <script src="main.js"></script>
             <script src="https://kit.fontawesome.com/6f0a8bd4fa.js" crossorigin="anonymous"></script>
+            <script>
+                function scrollWin() {
+                  window.scrollTo(0, 3750);
+                }
+                function scrollWin1() {
+                  window.scrollBy(0, 850);
+                }
+                
+                function scrollWin2() {
+                  window.scrollTo(0, 850);
+                }
+                
+                function scrollWin3() {
+                  window.scrollTo(0, 850);
+                }
+                </script>
             
 
 </body>

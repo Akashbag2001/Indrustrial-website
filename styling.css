@@ -11,6 +11,9 @@ body {
   align-items: center;
   padding: 20px;
 }
+.nav-link:hover {
+  cursor: pointer;
+}
 nav {
   flex: 1;
   text-align: right;
@@ -66,20 +69,13 @@ p {
   transition: background-color 0.5s;
 }
 .header {
-  background-image: linear-gradient(
-    to top,
-    #153f7e,
-    #604b8b,
-    #935991,
-    #bd6b93,
-    #de8393
-  );
+  background-color: #e07a5f;
 }
 .header .row {
   margin-top: 70px;
 }
 .btn:hover {
-  background-color: #22223b;
+  background-color: #7b7b86;
 }
 .categories {
   margin-right: 70px 0;
@@ -105,7 +101,7 @@ p {
   transition: transform 0.5s;
 }
 .col-4 img {
-  width: 100%;
+  width: 70%;
 }
 .title {
   text-align: center;
@@ -302,6 +298,7 @@ p {
   background-color: #ea4c89;
 }
 @media (max-width: 767px) {
+  .to-top,
   .social-icons li.title {
     display: block;
     margin-right: 0;
@@ -362,4 +359,29 @@ p {
 .testimonial {
   background-color: #293241;
   color: white;
+}
+
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }
